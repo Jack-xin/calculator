@@ -5,12 +5,13 @@
 <h4>调用方法：</h4>
 <p>1、引入calculate.js</p>
 <p>2、创建构造函数，并且传入显示窗口元素，输出窗口元素，deg元素，以及deg的backgroundColor</p>
-  <pre>var result = $("result"),
-    	    formula = $("formula"),
-    	    deg = $("deg"),
-   	    color = "rgb(0, 204, 102)",
-        cal = new Calculator(result, formula, deg, color);
-   </pre>
+<pre>
+     var result = $("result"),
+    	 formula = $("formula"),
+    	 deg = $("deg"),
+   	 color = "rgb(0, 204, 102)",
+     cal = new Calculator(result, formula, deg, color);
+</pre>
 <p>3、调用cal.calculate(argument)方法，将键入值传入calculate方法中。</p>
 
 <h4>实现运算种类：</h4>
@@ -27,12 +28,14 @@
 	（8）√(2^(2)) = 2
 </pre>
 <p>3、三角函数：</p>
-<pre>	角度制运算：
-		（1）cos(60) = 0.5
-		（2）cos(10+2x20+10) = 0.5
-		（3）sin(29.5+cos(20+40)) = 0.5
-	弧度制与角度制一样
-</pre>	
+<p>角度制运算：</p>
+<pre>   
+        （1）cos(60) = 0.5
+        （2）cos(10+2x20+10) = 0.5
+        （3）sin(29.5+cos(20+40)) = 0.5
+</pre>
+<p>弧度制与角度制一样</p>
+	
 <p>4、混合运算：</p>
 <pre>
 	（1）2^(cos(20+40)+1.5) = 4
