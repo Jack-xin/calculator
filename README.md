@@ -5,12 +5,13 @@
 <h4>调用方法：</h4>
 <p>1、引入calculate.js</p>
 <p>2、创建构造函数，并且传入显示窗口元素，输出窗口元素，deg元素，以及deg的backgroundColor</p>
-  <code>var result = $("result"),
+  <pre>var result = $("result"),
     	    formula = $("formula"),
     	    deg = $("deg"),
    	    color = "rgb(0, 204, 102)",
-        cal = new Calculator(result, formula, deg, color);</code>
-3、调用cal.calculate(argument)方法，将键入值传入calculate方法中。
+        cal = new Calculator(result, formula, deg, color);
+   </pre>
+<p>3、调用cal.calculate(argument)方法，将键入值传入calculate方法中。</p>
 
 实现运算种类：
 1、	普通运算：1+2+3=5；1x2-(5+6)=-9等
