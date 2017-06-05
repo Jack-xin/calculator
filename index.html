@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="bulid/css/main.css">
+</head>
+<body> 
+	<div class="container">
+		<!-- 计算器头部 -->
+        <div class="change_cal">
+            <span id="basic">标准</span>
+            <span id="sience">科学</span>
+            <div class="change_DR" id="change_DR">
+                <span id="rad">Rad</span>
+                <span id="deg">Deg</span>
+            </div>
+        </div>
+        <!-- 计算器显示器 -->
+        <div id="shows" class="shows">
+            <input type="text" name="formula" id="formula" />
+            <input type="text" name="result" id="result" />
+        </div>
+        <!-- 计算器功能按键 -->
+        <div class="enterKeys">
+        	<!-- 计算器最上排四个基础按键 -->
+            <div id="basicTools" class="basicTools">
+                <span>C</span>
+                <span>Del</span>
+                <span>()</span>
+                <span>+/-</span>
+            </div>
+            <!-- 科学计数按键 -->
+            <div id="sienceKeys" class="sienceKeys">
+                <span>sin</span>
+                <span>cos</span>
+                <span>tan</span>
+                <span>π</span>
+                <span>√</span>
+                <span>x²</span>
+                <span>xⁿ</span>
+                <span>%</span>
+            </div>
+            <!-- 基础按键 -->
+            <div id="basicKeys" class="basicKeys">
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>+</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>-</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>×</span>
+                <span>.</span>
+                <span>0</span>
+                <span>÷</span>
+                <span>=</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="bulid/js/calculate.js"></script>
+    <script type="text/javascript" src="bulid/js/main.js"></script>
+
+</body>
+</html>

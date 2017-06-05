@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana, Sans-serif;
+    font-weight: bold;
+}
+
+/*容器样式设计*/
+.container {          
+    width: 300px;
+    height: 500px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background: #CCCCFF;
+    box-shadow: 2px 2px 2px 2px #666;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -250px;
+}
+/*计算器顶部计算器切换键样式设计*/
+.container .change_cal {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 24px;
+    top: 10px;
+}
+
+.container .change_cal span {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 7px;
+    background: #CCCCFF;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 5px;
+    box-shadow: 1px 1px 1px 1px #666;
+    cursor: pointer;
+}
+
+.container .change_cal span:first-child {
+    background: #669966;
+}
+
+.container .change_cal .change_DR {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    display: none;
+}
+
+.container .change_cal .change_DR span:first-child{
+    background: #00CC66;
+}
+
+/*计算器显示器样式设计*/
+.container .shows {
+    width: 280px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.container .shows input {
+    width: 280px;
+    height: 53px;
+    outline: none;
+    border: 1px solid #666;
+    border-radius: 10px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.container .shows input:first-child {
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 20px;
+}
+
+.container .shows input:last-child {
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 30px;
+}
+
+/*计算器按键样式设计*/
+.container .enterKeys{
+    width: 280px;
+    margin: 20px auto;
+}
+
+.container .enterKeys span {
+    display: inline-block;
+    width: 62px;
+    background: #33CCCC;
+    border: 1px solid #999;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #666;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*计算器功能按键着色*/
+.container .enterKeys span:nth-child(4),
+.container .enterKeys span:nth-child(8),
+.container .enterKeys span:nth-child(12),
+.container .enterKeys span:nth-child(13),
+.container .enterKeys span:nth-child(15) {
+    background: #FFFFFF;
+}
+
+.container .enterKeys span:nth-child(16) {
+    background: #FF6600;
+}
+
+.container .enterKeys .basicTools,
+.container .enterKeys .basicKeys,
+.container .enterKeys .sienceKeys,
+.container .enterKeys .sienceBasicKeys {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.container .enterKeys .basicTools {
+    height: 56px;
+    margin-bottom: 8px;
+}
+
+.container .enterKeys .basicTools span {
+    background: #FF9999;
+}
+
+.container .enterKeys .basicKeys {
+    height: 265px;
+}
+
+.container .enterKeys .basicKeys span {
+    height: 56px;
+}
+
+.container .enterKeys .sienceKeys {
+    display: none;
+    height: 90px;
+}
+
+.container .enterKeys .sienceKeys span {
+    background: #CCCCFF;
+}
+
+.container .enterKeys .sienceBasicKeys {
+    height: 180px;
+}
+
+.container .enterKeys .sienceKeys span,
+.container .enterKeys .sienceBasicKeys span {
+    height: 33px;
+    line-height: 33px;
+}
+
+.container .enterKeys span:active {
+    background: #CC9909;
+}
