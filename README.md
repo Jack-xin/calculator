@@ -1,4 +1,5 @@
 # calculator
+<p>Demo：https://jack-xin.github.io/calculator/</p>
 <h4>概要：</h4>
 	<p>该科学计算器，使用ES5语法编写，可以实现普通运算以及科学运算。将核心计算程序封装成模块，可复用。准确判断输入左右括号，小数点等。</p>
 
